@@ -1,3 +1,4 @@
-![image](https://github.com/user-attachments/assets/272df4d6-9b47-40c2-abc4-3cae34f43507)
+![image](https://github.com/user-attachments/assets/f68184c4-40fa-44a8-8426-fdb9f65fd8d0)
+
 
 Thx to AmanPathak for inspiration on this project
