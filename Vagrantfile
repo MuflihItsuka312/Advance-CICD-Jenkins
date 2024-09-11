@@ -10,7 +10,9 @@ Vagrant.configure("2") do |config|
     ci.vm.network "forwarded_port", guest: 9000, host: 9002  # Forwarding port 9000
     ci.vm.network "forwarded_port", guest: 22, host: 2222 
     ci.vm.network "forwarded_port", guest: 3000, host: 3001 
-    ci.vm.network "forwarded_port", guest: 8000, host: 7999  
+    ci.vm.network "forwarded_port", guest: 8000, host: 7999
+    ci.vm.network "forwarded_port", guest: 9090, host: 631
+    ci.vm.network "forwarded_port", guest: 3030, host: 731  
      # SSH access
 
     # VirtualBox provider configuration
