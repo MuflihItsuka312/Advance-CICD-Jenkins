@@ -23,3 +23,13 @@ sudo usermod -aG docker jenkins
 sudo usermod -aG docker ubuntu
 sudo systemctl restart docker
 sudo chmod 777 /var/run/docker.sock
+
+# Run Docker Container of Sonarqube
+#!/bin/bash
+docker run -d  --name sonar -p 9000:9000 sonarqube:lts-community
+
+# Install Prometheus
+docker run -d --name prometheus -p 9090:9090 prom/prometheus
+
+#install Grafana
+docker run -d --name grafana -p 3030:3030 -e "GF_SERVER_HTTP_PORT=3030" grafana/grafana
